@@ -1,0 +1,24 @@
+
+{% extends 'home/base.html' %}
+    
+    {% block content %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          {% for volunteer in volunteers %}
+          <tr>
+            <td>{{ volunteer.name }}</td>
+            <td>{{ volunteer.availability }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    
+    </ul>   
+    {% endblock %}

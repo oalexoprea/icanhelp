@@ -1,0 +1,11 @@
+
+{% extends 'home/base.html' %}
+    
+{% block content %}
+ Hello World Donation
+ <ul>
+{% for volunteer in volunteers %}
+    <li>{{ volunteer.name }}</li>
+{% endfor %}
+</ul>   
+{% endblock %}
